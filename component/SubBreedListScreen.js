@@ -16,12 +16,12 @@ const SubBreedListScreen = ({ route }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{breed ? breed.name : ''} Sub-Breeds</Text>
+      <Text style={styles.title}>  Sub Breed Of {breed}</Text>
       <FlatList
-  data={subBreeds}
+  data={Object.keys(breed)}
   renderItem={({ item }) => (
     <View style={styles.item}>
-      <Text style={styles.itemText}>{breed.name} {item}</Text>
+      <Text style={styles.itemText}>{breed.subBreeds} {item}</Text>
 
     </View>
   )}

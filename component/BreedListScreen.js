@@ -57,8 +57,7 @@ const BreedListScreen = ({ navigation }) => {
             <Text style={styles.text}>{item}</Text>
           </TouchableOpacity>
         )}
-        keyExtractor={(item) => item}
-        
+        keyExtractor={(item) => item}   
       />
     </View>
   );
