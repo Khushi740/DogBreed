@@ -1,15 +1,36 @@
-Instructions For Running Weather App
-● Clone the Repository:
-Clone the GitHub repository containing the Expo app to your local machine using Git.
-Use the following command in your terminal:
+Dog App 
+
+
+Prerequisites:
+
+npm (or yarn) installed (https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+An Expo account (https://expo.dev/login)
+
+Getting Started:
+
+Clone the Repository:
+
+Open your terminal and use the following command to clone this repository:
+
 git clone https://github.com/Khushi740/DogBreed
-● Navigate to the Project Directory:
-Use the cd command to navigate into the project directory:
+Replace <your-username> with your actual GitHub username.
+
+Install Dependencies:
+
+Navigate to the project directory:
+
 cd DogBreed
-● Install Dependencies:
-Navigate into the project directory if you're not already there.
-Run the following command to install the project dependencies (including Expo CLI):
+Install the project's dependencies using npm or yarn:
+
 npm install
-● Start the Expo Development Server:
-After installing dependencies, start the Expo development server by running:
-npx expo start
+(or)
+
+yarn install
+Run the App:
+
+Start the development server using Expo:
+
+npm start
+(or)
+
+yarn start
