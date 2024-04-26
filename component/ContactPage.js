@@ -75,17 +75,21 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: '#FFF', // Set background color to white
   },
   label: {
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: 'bold',
     marginBottom: 5,
+    color: '#333', // Set label text color to dark gray
   },
   input: {
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 5,
-    padding: 10,
-    marginBottom: 10,
+    borderRadius: 8,
+    padding: 12,
+    marginBottom: 15,
+    fontSize: 16,
   },
   error: {
     color: 'red',
@@ -94,6 +98,7 @@ const styles = StyleSheet.create({
   success: {
     color: 'green',
     marginTop: 10,
+    textAlign: 'center', // Center-align success message
   },
 });
 

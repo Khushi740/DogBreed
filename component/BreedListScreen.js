@@ -26,7 +26,7 @@ const BreedListScreen = ({ navigation }) => {
   const handleBreedPress = (breed) => {
     const subBreeds = breeds[breed];
     if (subBreeds && subBreeds.length > 0) {
-      navigation.navigate('SubList', { breed });
+      navigation.navigate('SubList', { data:subBreeds,data1:breed });
     } else {
       navigation.navigate('BreedImages', { breed });
     }
@@ -77,8 +77,9 @@ const styles = StyleSheet.create({
   list: {
     marginLeft: 20,
     margin: 5,
-    backgroundColor: 'grey',
+    backgroundColor: '#98F5F9', // Changed color to blue
     marginRight: 20,
+    borderRadius: 10, // Added border radius
   },
   text: {
     fontSize: 20,
