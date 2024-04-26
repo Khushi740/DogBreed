@@ -6,28 +6,20 @@ const SubBreedListScreen = ({ route }) => {
   const { breed } = route.params;
 
   // Extracting sub-breeds for the selected breed
-  const subBreeds = breed ? breed.subBreeds ?? [] : [];
-
-
-  console.log('Breed:', breed);
-  console.log('Sub-breeds:', breed.subBreeds);
- 
-
+  const subBreeds = breed ? breed.subBreeds ?? [] : [''];
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>  Sub Breed Of {breed}</Text>
+      <Text style={styles.title}>Sub Breeds Of {breed}</Text>
       <FlatList
-  data={Object.keys(breed)}
-  renderItem={({ item }) => (
-    <View style={styles.item}>
-      <Text style={styles.itemText}>{breed.subBreeds} {item}</Text>
-
-    </View>
-  )}
-  keyExtractor={(item) => item}
-/>
-
+        data={subBreeds}
+        renderItem={({ item }) => (
+          <View style={styles.item}>
+            <Text style={styles.itemText}>{item}</Text>
+          </View>
+        )}
+        keyExtractor={(item) => item}
+      />
     </View>
   );
 };
